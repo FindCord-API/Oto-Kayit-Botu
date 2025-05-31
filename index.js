@@ -76,7 +76,7 @@ client.on(Events.InteractionCreate, async interaction => {
   
   try {
 	  
-	if (config.ayar.cinsiyet_belirsizse_kayit_etme === 'true' && cinsiyetLower === 'unisex') {
+    if (config.ayar.cinsiyet_belirsizse_kayit_etme === 'true' && cinsiyetLower === 'unisex') {
       await interaction.reply({ content: `❌ Kayıt başarısız. FindCord API'de cinsiyetiniz belirli değil.`, flags: 64 }).catch(() => null);		
       return;
     }
