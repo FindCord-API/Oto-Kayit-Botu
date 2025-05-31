@@ -37,12 +37,12 @@ client.on('messageCreate', async (message) => {
 	.setThumbnail(message.guild.iconURL())
 	.setFooter({ text: 'FindCord API' });
 	
-    const kayıtButton = new ButtonBuilder()
+    const kayitButton = new ButtonBuilder()
       .setCustomId('kayıt_ol')
       .setLabel('Kayıt Ol')
       .setStyle(ButtonStyle.Success);
 
-    const row = new ActionRowBuilder().addComponents(kayıtButton);
+    const row = new ActionRowBuilder().addComponents(kayitButton);
 
     await message.channel.send({
 	  embeds: [exampleEmbed],
