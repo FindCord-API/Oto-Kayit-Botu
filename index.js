@@ -71,7 +71,7 @@ client.on(Events.InteractionCreate, async interaction => {
 
   const { isim, yas, cinsiyet } = data;
   const { kayitsiz, kayitli, erkek, kadin, unisex } = config.roller;
-  const taglıIsim = `${config.tag.length > 0 ? `${config.tag} ` : ""}${isim} | ${yas}`;
+  const tagliIsim = `${config.tag.length > 0 ? `${config.tag} ` : ""}${isim} | ${yas}`;
   const cinsiyetLower = cinsiyet.toLowerCase();
   
   try {
@@ -101,7 +101,7 @@ client.on(Events.InteractionCreate, async interaction => {
       await member.roles.add(unisex).catch(() => null);
     }
 
-    await member.setNickname(taglıIsim).catch(() => null);
+    await member.setNickname(tagliIsim).catch(() => null);
 
     await interaction.reply({ 
 		content: 
