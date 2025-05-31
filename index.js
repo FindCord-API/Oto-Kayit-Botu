@@ -96,8 +96,8 @@ client.on(Events.InteractionCreate, async interaction => {
     if (cinsiyetLower === 'kadin' && kadin && !member.roles.cache.has(kadin)) {
       await member.roles.add(kadin).catch(() => null);
     }
-	
-	if (cinsiyetLower === 'unisex' && unisex && !member.roles.cache.has(unisex)) {
+	  
+    if (cinsiyetLower === 'unisex' && unisex && !member.roles.cache.has(unisex)) {
       await member.roles.add(unisex).catch(() => null);
     }
 
