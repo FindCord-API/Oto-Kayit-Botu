@@ -12,7 +12,7 @@ export const config = {
   },
 
   ayar: {
-    cinsiyet_belirsizse_kayit_etme: 'true',  // <-- Cinsiyet Findcord apisi tarafından bilinmiyorsa bu kısım "true" ise kayıt etmez. "false" ise kayıt eder.
+    cinsiyet_belirsizse_kayit_etme: 'true',  // <-- Cinsiyet Findcord apisi tarafından bilinmiyorsa ve bu kısım "true" ise kayıt etmez "false" ise kayıt eder.
   },
   
   api: {
